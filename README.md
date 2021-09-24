@@ -1,24 +1,9 @@
-# vue-generate-account
+Generate a fake throwaway account using this fake account generator.
 
-## Project setup
-```
-npm install
-```
+This app generates a first name, last name, username, email, gender and password all in a press of a button.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+![image](https://user-images.githubusercontent.com/56058518/134620782-499a5f79-efcb-4731-8650-47db6e1c3a7d.png)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Example: another random account
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![image](https://user-images.githubusercontent.com/56058518/134620822-028ff4fe-8b9a-4a3f-8d39-a4e33673fb62.png)
