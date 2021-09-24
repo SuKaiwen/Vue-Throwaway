@@ -3,10 +3,12 @@
     <h1>Identity Generator</h1>
     <br />
     <div class="card">
-      <div class="container">
+      <div class="image-grid">
+        <img src="@/assets/backgroundd.jpg" class="image-background"/>
         <img v-bind:src="image" class="image-circle" alt="image" />
-        <h1>{{firstName}} {{lastName}}</h1>
+        
       </div>
+      <h1>{{firstName}} {{lastName}}</h1>
       <h5>Gender: {{gender}} </h5>
       <h5>Email: {{email}}</h5>
       <h5>Username: {{username}}</h5>

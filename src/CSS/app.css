@@ -37,8 +37,23 @@ button{
     flex-direction: column;
 }
 
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: relative;
+}
+
 .image-circle{
     height:150px;
     width: 150px;
     border-radius: 50%;
+    grid-column: 4 / 12;
+    grid-row: 4 / 6;
+    border: 10px solid white;
+}
+
+.image-background{
+    width:100%;
+    grid-column: 1 /span 12;
+    grid-row: 1 / 5;
 }
