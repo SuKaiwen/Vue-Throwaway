@@ -1,6 +1,16 @@
 <template>
-  <div class="hello">
+  <div class="container">
     <h1>Account Generator</h1>
+    <br />
+    <div class="card">
+      <h5>Email: </h5>
+      <h5>Username: </h5>
+      <h5>Password: </h5>
+      <div class="container">
+        <button>Generate User</button>
+      </div>
+    </div>
+    
   </div>
 </template>
 
@@ -14,19 +24,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style src="../CSS/app.css" scoped>
+
 </style>
