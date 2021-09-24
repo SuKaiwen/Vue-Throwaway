@@ -4,6 +4,7 @@
     <br />
     <div class="card">
       <div class="container">
+        <img v-bind:src="image" class="image-circle" alt="image" />
         <h1>{{firstName}} {{lastName}}</h1>
       </div>
       <h5>Gender: {{gender}} </h5>
@@ -12,10 +13,9 @@
       <h5>Phone Number: {{cell}}</h5>
       <h5>Password: {{password}}</h5>
       <div class="container">
-        <button v-on:click="getUser()">Generate User</button>
+        <button v-on:click="generateUser">Generate User</button>
       </div>
     </div>
-    
   </div>
 </template>
 
@@ -30,7 +30,14 @@ export default {
     password: String,
     gender: String,
     cell: String,
-  } 
+    image: String,
+  },
+
+  methods: {
+    generateUser(){
+      this.$parent.generateUser();
+    }
+  }
 }
 </script>
 

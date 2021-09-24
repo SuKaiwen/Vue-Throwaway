@@ -36,3 +36,9 @@ button{
     display:flex;
     flex-direction: column;
 }
+
+.image-circle{
+    height:150px;
+    width: 150px;
+    border-radius: 50%;
+}
