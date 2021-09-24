@@ -1,16 +1,46 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Body 
+    :firstName = "user.firstName"
+    :lastName = "user.lastName"
+    :email = "user.email"
+    :username = "user.username"
+    :password = "user.password"
+    :gender = "user.gender"
+    :cell = "user.cell"
+    :function = "generateUser()"
+  />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Body from './components/Body.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Body
+  },
+
+  data(){
+    return{
+      user: {
+        firstName: 'John',
+        lastName: 'Smith',
+        email: 'JohnSmith@gmail.com',
+        username: 'JohnSmith1234',
+        password: 'abcdefg',
+        gender: 'Male',
+        cell: '123-456-7890'
+      }
+    }
+  },
+
+  methods: {
+    async generateUser(){
+      const res = await fetch('https://randomuser.me/api')
+      const {results} = await res.json()
+      console.log(results)
+    }
+  } 
 }
 </script>
 
